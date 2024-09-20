@@ -1,4 +1,5 @@
 
+
 # -*- coding: cp1251 -*-
 from colorama import Fore, Style
 
@@ -29,7 +30,7 @@ class Shop():
         for J in products:
             for I in lines:
                 if J.name in I and J.category in I and str(J.weight) in I:
-                    print(f'Продукт {Fore.LIGHTWHITE_EX}"{J}"{Style.RESET_ALL} уже есть в магазине')
+                    print(f'РџСЂРѕРґСѓРєС‚ {Fore.LIGHTWHITE_EX}"{J}"{Style.RESET_ALL} СѓР¶Рµ РµСЃС‚СЊ РІ РјР°РіР°Р·РёРЅРµ')
                     break
             else:
                 addFile.write(f'{J}\n')
@@ -48,8 +49,8 @@ p7 = Product('Cottage cheese', 0.4, 'Dairy products')
 
 print(p2)
 
-# 1.add_products(p1, p2, p3, p4, p5)
-s1.add_products(p1, p2, p3, p4, p5, p6, p7)
+1.add_products(p1, p2, p3, p4, p5)
+# s1.add_products(p1, p2, p3, p4, p5, p6, p7)
 
 print(s1.get_products())
 
